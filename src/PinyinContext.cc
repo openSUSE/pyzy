@@ -149,7 +149,7 @@ PinyinContext::updatePreeditText ()
         }
     }
 
-    m_preedit_text.selected_text = m_buffer.substr (edit_begin_byte);
+    m_preedit_text.selected_text = m_buffer.substr (0, edit_begin_byte);
     m_preedit_text.candidate_text = m_buffer.substr (edit_begin_byte, edit_end_byte - edit_begin_byte);
     m_preedit_text.rest_text = m_buffer.substr (edit_end_byte);
 
